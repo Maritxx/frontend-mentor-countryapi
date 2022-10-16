@@ -8,12 +8,9 @@ const getCountryData = async function() {
             }
         });
         const countryData = await response.json();
-        console.log(countryData);
         return countryData;
         
     } catch (error) {
         console.log(error);
     }
 }
-
-getCountryData();
